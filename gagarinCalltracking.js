@@ -10,7 +10,7 @@
     } else if (typeof define === 'function' && define.amd) {
         define([], factory);
     } else {
-        root.gagrinCalltracking = factory();
+        root.gagarinCalltracking = factory();
     }
 
 }(this, function() {
