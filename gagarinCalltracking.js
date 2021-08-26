@@ -1,7 +1,6 @@
 /**
  * Static call-tracking script
  * (c) Herman Rogov 
- * version 1.0 based on SipuniCT
  */
 ;(function(root, factory) {
 
@@ -11,7 +10,7 @@
     } else if (typeof define === 'function' && define.amd) {
         define([], factory);
     } else {
-        root.sipuniCalltracking = factory();
+        root.gagrinCalltracking = factory();
     }
 
 }(this, function() {
@@ -37,7 +36,7 @@
                                             return (o && a2b(o).indexOf('direct.yandex.ru')>-1);
                                        }}
         },
-        cookie_key: 'sipunicts',
+        cookie_key: 'gagarincts',
         cookie_ttl_days: 30*3
     };
 
@@ -460,3 +459,7 @@
     };
 
 }));
+
+/**
+ * version 1.0 based on SipuniCT
+ */
