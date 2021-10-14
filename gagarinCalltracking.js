@@ -1,6 +1,6 @@
 /**
- * Static call-tracking script
- * (c) Herman Rogov 
+ * Если упал коллтрекинг. Подмена номера на сайте, см. инструкцию
+ * Use as alternative static calltracking script
  */
 ;(function(root, factory) {
 
@@ -201,6 +201,8 @@
 
     /**
      * Parameters manipulation methods
+     * Менять при необходимости
+     * Параметры прописать непосредственно на сайте
      */
     var dict = {
 
@@ -358,6 +360,7 @@
 
     /**
      * Phone number formatting support
+     * Изменить если нужна иная маска
      */
     var template = {
 
@@ -461,5 +464,6 @@
 }));
 
 /**
- * version 1.0 based on SipuniCT
+ * работает на любом конструкторе, который позволяет вставить js желательно вставить в head
+ * Chrome supported
  */
